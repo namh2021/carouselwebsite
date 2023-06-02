@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <title>Carousel Page</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCarousel"
+            aria-controls="navbarCarousel"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCarousel">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section>
+      <div id="labCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#labCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#labCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#labCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg-img1">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>First slide label</h1>
+                <p>
+                  Some representative placeholder content for the first slide of
+                  the carousel.
+                </p>
+                <a href="#" class="btn btn-lg btn-primary">Sign up today</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-img2">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Second slide label</h1>
+                <p>
+                  Some representative placeholder content for the second slide
+                  of the carousel.
+                </p>
+                <a href="#" class="btn btn-lg btn-primary">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-img3">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Third slide label</h1>
+                <p>
+                  Some representative placeholder content for the third slide of
+                  the carousel.
+                </p>
+                <a href="#" class="btn btn-lg btn-primary">Browse gallery</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#labCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#labCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--Showcase-->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+              Trở thành
+              <span class="span text-warning">Nhà Thiết Kế Web</span>
+            </h1>
+            <p class="lead my-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              dolor sunt labore ad ipsum consequatur aliquam maiores, a autem
+              expedita! Eum vel aliquam molestias voluptatibus cumque.
+              Consequuntur odio quae reiciendis!
+            </p>
+            <button
+              class="btn btn-primary btn-lg mb-4"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Đăng ký học
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Newsletter-->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Đăng ký để nhận tin</h3>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Nhập Email" />
+            <button class="btn btn-dark btn-lg" type="button">Đăng ký</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Virtual</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                  dolorum!
+                </p>
+                <a href="#" class="btn btn-primary">Tìm hiểu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hybrid</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Explicabo, porro.
+                </p>
+                <a href="#" class="btn btn-info">Tìm hiểu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">In Person</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Doloribus, impedit mollitia.
+                </p>
+                <a href="#" class="btn btn-primary">Tìm hiểu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Basics -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center jusify-content-between">
+          <div class="col-md">
+            <img src="img/fundamentals.svg" class="img-fluid" alt="learn" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Chương Trình Căn Bản</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque
+              fugit sunt molestias, dicta labore?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              nobis unde aliquam aperiam voluptatibus repudiandae ipsam debitis
+              delectus animi quae exercitationem dignissimos, nisi totam nam sed
+              ducimus consequuntur ab laborum?
+            </p>
+            <a href="#" class="btn btn-light mt-3"
+              ><i class="bi bi-chevron-right"></i> Tìm hiểu</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn React -->
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center jusify-content-between">
+          <div class="col-md p-5">
+            <h2>Chương Trình Nâng Cao</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque
+              fugit sunt molestias, dicta labore?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              nobis unde aliquam aperiam voluptatibus repudiandae ipsam debitis
+              delectus animi quae exercitationem dignissimos, nisi totam nam sed
+              ducimus consequuntur ab laborum?
+            </p>
+            <a href="#" class="btn btn-light mt-3"
+              ><i class="bi bi-chevron-right"></i>Tìm hiểu</a
+            >
+          </div>
+          <div class="col-md">
+            <img src="img/react.svg" class="img-fluid" alt="react" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion-->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Giải đáp thắc mắc</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-1"
+              >
+                Nội dung câu hỏi thứ 1?
+              </button>
+            </h2>
+            <div
+              id="question-1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+                reprehenderit nostrum asperiores non inventore corrupti
+                distinctio autem accusantium eos? Saepe delectus hic
+                voluptatibus rerum minima sit neque impedit, expedita ipsam
+                nulla dolorem magnam quo! Nesciunt natus ex doloremque veniam
+                asperiores non corporis quam, facere minima repellat, ipsa
+                deleniti veritatis eveniet.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-2"
+              >
+                Nội dung câu hỏi thứ 2?
+              </button>
+            </h2>
+            <div
+              id="question-2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                aspernatur magnam accusantium quisquam? Labore quia sequi
+                similique autem omnis minus unde tempore ipsam. Doloremque iste
+                error harum perferendis nobis soluta iusto nihil ad cum, odit
+                magni sed fuga voluptate tempore quisquam voluptatibus officiis
+                consequatur quas praesentium illum eius aperiam pariatur.
+                Officia!
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-3"
+              >
+                Nội dung câu hỏi thứ 3?
+              </button>
+            </h2>
+            <div
+              id="question-3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+                minima enim optio. Ipsum ullam minus consectetur laudantium
+                cumque adipisci, quia totam iusto necessitatibus rem dicta
+                corporis nulla eos quam, illum aspernatur explicabo delectus et,
+                fugiat voluptatibus perferendis. Cum, blanditiis deleniti nihil
+                tempore exercitationem dolore quia at cumque consequatur
+                adipisci, fuga aliquid suscipit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-4"
+              >
+                Nội dung câu hỏi thứ 4?
+              </button>
+            </h2>
+            <div
+              id="question-4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                maxime blanditiis eum asperiores inventore nostrum autem
+                explicabo ipsam animi sapiente, quisquam ipsum aliquam
+                voluptatum ratione fugiat sit consequuntur? Vel commodi beatae
+                ab officia accusamus magnam eaque dolore iste, fugiat provident
+                pariatur minus a repellendus odit sequi voluptatibus delectus
+                in! Nemo laudantium velit consequuntur.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-5"
+              >
+                Nội dung câu hỏi thứ 5?
+              </button>
+            </h2>
+            <div
+              id="question-5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quia
+                blanditiis maxime corporis a consectetur officia. At ea
+                molestiae soluta facere, sint quisquam minus perferendis
+                eligendi! Eos enim architecto nobis libero debitis maiores
+                aliquam minima maxime error blanditiis est hic ad assumenda ea
+                numquam quae temporibus harum veniam iusto quidem, dicta esse.
+                Tempora, beatae.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mục Giảng viên -->
+
+    <section class="p-5 bg-primary" id="instructors">
+      <div class="container">
+        <h2 class="text-center text-white">Giảng viên</h2>
+        <p class="lead text-center text-white mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+          sint.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light h-100">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/7.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Văn A</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  officia neque beatae voluptatum doloremque.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light h-100">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/10.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Thị B</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  tenetur explicabo fugiat? Minus velit labore tempora!
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light h-100">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Văn C</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                  dolores voluptates ut omnis adipisci, officiis nesciunt.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light h-100">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Thị D</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                  deserunt, illum eum excepturi quasi quia corporis minima?
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h2 class="text-center mb-4">Liên hệ</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Địa điểm chính: </span> 123 Nguyễn Huệ,
+                Q.1, TP.HCM
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Số điện thoại: </span> 123-456-789
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email đăng ký nhập học: </span>
+                contact@funix.com.vn
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email hướng dẫn: </span>
+                infor@funix.com.vn
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div id="map" class="text-center">
+              <img
+                src="img/funix-map.jpg"
+                alt="map"
+                class="img-fluid mx-auto d-block"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2023 Funix</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5"
+          ><i class="bi bi-arrow-up-circle h1"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Thông tin đăng ký</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Hãy điền vào form sau:</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">Tên: </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Họ: </label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email: </label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label"
+                  >Số điện thoại:
+                </label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Đóng cửa sổ
+            </button>
+            <button type="button" class="btn btn-primary">Đăng Ký</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
